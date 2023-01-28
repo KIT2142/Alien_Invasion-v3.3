@@ -104,7 +104,7 @@ class AlienInvasion:
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
         elif event.key == pygame.K_ESCAPE:
-            filename = 'alien_invasion/score.txt'
+            filename = 'score.txt'
             with open(filename, 'w') as file_object:
                 file_object.write(str(self.stats.high_score))
             sys.exit()
